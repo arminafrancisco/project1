@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}Home{% endblock %}
+
+{% block navbar-right %}
+  {% if not user.is_authenticated %}
+<a class="btn btn-default" href="{% url 'accounts:login' %}" role="button">Log in</a>
+<a class="btn btn-primary" href="{% url 'accounts:signup' %}" role="button">Sign up</a>
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock %}
+
+{% block splash %}
+  <div class="jumbotron jumbotron-carousel corporate-jumbo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-8">
+          <h1>{% include "_brandname.html" %}</h1>
+          <p>Never mind I'll find someone like you. I wish nothing but the best for you.</p>
+    <a class="btn btn-lg btn-primary" href="{% url 'accounts:signup' %}" role="button">Shop now</a>
+        </div>
+        <div class="col-md-4 col-sm-4">
+
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock splash %}
+
+{% block container %}
+<!-- Benefits of the Django application -->
+<a name="about"></a>
+<!--
+<div class="container" style="margin-top: 80px; margin-bottom: 80px;">
+  <div class="row" id="box-wrapper-inner">
+    <div class="col-lg-3 well" style="margin: 15px;">
+      <center><img src="{% static 'site/img/womenshoes.jpg' %}" class="img-circle" alt="WS" width="200px"></center>
+      <h2>Women's Shoes</h2>
+      <p>Description</p>
+      <p><a class="btn btn-primary" href="#" role="button">Browse &raquo;</a></p>
+    </div>
+
+    <div class="col-lg-3 well" style="margin: 15px;">
+      <center><img src="{% static 'site/img/menshoes.jpg' %}" class="img-circle" alt="WS" width="200px"></center>
+      <h2>Men's Shoes</h2>
+      <p>Description</p>
+      <p><a class="btn btn-primary" href="#" role="button">Browse &raquo;</a></p>
+    </div>
+
+    <div class="col-lg-3 well" style="margin: 15px;">
+      <center><img src="{% static 'site/img/kidshoes.jpg' %}" class="img-circle" alt="WS" width="200px"></center>
+      <h2>Kids' Shoes</h2>
+      <p>Description</p>
+      <p><a class="btn btn-primary" href="#" role="button">Browse &raquo;</a></p>
+    </div>
+  </div>
+</div>
+-->
+<div class="container" style="margin-top: 80px; margin-bottom: 80px;">      
+        <ul class="ch-grid well">
+          <li>
+            <div class="ch-item ch-img-1">
+              <div class="ch-info">
+                <h3>WS</h3>
+                <p>Women's Shoes <a href="#">BROWSE NOW</a></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="ch-item ch-img-2">
+              <div class="ch-info">
+                <h3>MS</h3>
+                <p>Men's Shoes<a href="#">BROWSE NOW</a></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="ch-item ch-img-3">
+              <div class="ch-info">
+                <h3>KS</h3>
+                <p>Kids' Shoes <a href="#">BROWSE NOW</a></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+</div>
+
+
+{% endblock container %}
+
+{% block navbar-left %}
+  {% include "_navbar.html" with active_link="home" %}
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'site/js/site.js' %}"></script>
+{% endblock scripts %}
+

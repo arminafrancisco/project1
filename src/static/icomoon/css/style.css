@@ -1,0 +1,120 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?assy2d');
+	src:url('../fonts/icomoon.eot?assy2d#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?assy2d') format('truetype'),
+		url('../fonts/icomoon.woff?assy2d') format('woff'),
+		url('../fonts/icomoon.svg?assy2d#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size: 30px;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+	content: "\e900";
+}
+.icon-facebook2:before {
+	content: "\e901";
+}
+.icon-facebook3:before {
+	content: "\e902";
+}
+.icon-instagram:before {
+	content: "\e903";
+}
+.icon-twitter:before {
+	content: "\e904";
+}
+.icon-twitter2:before {
+	content: "\e905";
+}
+.icon-twitter3:before {
+	content: "\e906";
+}
+.icon-youtube:before {
+	content: "\e907";
+}
+.icon-youtube3:before {
+	content: "\e908";
+}
+.icon-vimeo:before {
+	content: "\e909";
+}
+.icon-vimeo3:before {
+	content: "\e90a";
+}
+.icon-flickr2:before {
+	content: "\e90b";
+}
+.icon-flickr3:before {
+	content: "\e90c";
+}
+.icon-picassa:before {
+	content: "\e90d";
+}
+.icon-dribbble:before {
+	content: "\e90e";
+}
+.icon-dribbble3:before {
+	content: "\e90f";
+}
+.icon-wordpress:before {
+	content: "\e910";
+}
+.icon-blogger2:before {
+	content: "\e911";
+}
+.icon-tumblr:before {
+	content: "\e912";
+}
+.icon-tumblr2:before {
+	content: "\e913";
+}
+.icon-skype:before {
+	content: "\e914";
+}
+.icon-linkedin:before {
+	content: "\e915";
+}
+.icon-linkedin2:before {
+	content: "\e916";
+}
+.icon-pinterest:before {
+	content: "\e917";
+}
+.icon-pinterest2:before {
+	content: "\e918";
+}
+.icon-paypal2:before {
+	content: "\e919";
+}
+.icon-paypal3:before {
+	content: "\e91a";
+}
+.icon-chrome:before {
+	content: "\e91b";
+}
+.icon-firefox:before {
+	content: "\e91c";
+}
+.icon-IE:before {
+	content: "\e91d";
+}
+.icon-safari:before {
+	content: "\e91e";
+}
+
